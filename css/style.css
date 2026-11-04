@@ -616,3 +616,171 @@ a:focus-visible {
     }
 
 }
+
+/* BOTÓN DE BIENVENIDA */
+
+#boton-bienvenida {
+    background-color: #D8A7A7;
+    color: #211B1B;
+    border: none;
+    padding: 14px 28px;
+    min-height: 44px;
+    border-radius: 30px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#boton-bienvenida:hover {
+    background-color: #E9D8C8;
+}
+
+#boton-bienvenida:focus-visible {
+    outline: 3px solid #211B1B;
+    outline-offset: 3px;
+}
+
+/* =====================================
+   MENÚ MÓVIL
+   MARYS LENCERÍA CR
+===================================== */
+
+/* Botón del menú */
+.boton-menu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #211B1B;
+    font-size: 30px;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+/* Configuración para celulares */
+@media (max-width: 768px) {
+
+    .encabezado-contenido {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .boton-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navegacion {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 15px 0;
+        background-color: #F9EEEE;
+        gap: 10px;
+    }
+
+    .navegacion.activo {
+        display: flex;
+    }
+
+    .navegacion a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+}
+
+/* =====================================
+   FORMULARIO DE CONTACTO
+   MARYS LENCERÍA CR
+===================================== */
+
+.formulario-contacto {
+    width: 100%;
+    max-width: 600px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(33, 27, 27, 0.08);
+    text-align: left;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    color: #211B1B;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D8A7A7;
+    border-radius: 8px;
+    background-color: #F9EEEE;
+    color: #211B1B;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+}
+
+.campo-formulario input {
+    min-height: 48px;
+}
+
+.campo-formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    outline: 2px solid #D8A7A7;
+    outline-offset: 2px;
+}
+
+.formulario-contacto button {
+    width: 100%;
+    min-height: 48px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .formulario-contacto {
+        padding: 20px;
+    }
+
+}
+
+/* =====================================
+   MENSAJE DEL FORMULARIO
+===================================== */
+
+.mensaje-formulario {
+    display: none;
+    margin: 20px auto 0;
+    padding: 15px;
+    background-color: var(--rosa-claro);
+    color: var(--negro);
+    border-left: 4px solid var(--rosa);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.mensaje-formulario.visible {
+    display: block;
+}

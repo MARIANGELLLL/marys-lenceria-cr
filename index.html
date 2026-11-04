@@ -1,5 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +10,13 @@
 
     <title>MARYS LENCERÍA CR | Tu esencia, tu belleza</title>
 
+    <!-- TIPOGRAFÍAS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,31 +24,59 @@
 
     <!-- ENCABEZADO -->
     <header class="encabezado">
+
         <div class="encabezado-contenido">
 
+            <!-- LOGO -->
             <a href="#inicio" class="logo">
                 <img src="img/logo.png" alt="MARYS LENCERÍA CR">
             </a>
 
-            <nav class="navegacion" aria-label="Navegación principal">
+            <!-- BOTÓN MENÚ MÓVIL -->
+            <button
+                class="boton-menu"
+                id="boton-menu"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="navegacion-principal">
+
+                ☰
+
+            </button>
+
+            <!-- NAVEGACIÓN -->
+            <nav
+                class="navegacion"
+                id="navegacion-principal"
+                aria-label="Navegación principal">
+
                 <a href="#inicio">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
                 <a href="#catalogo">Catálogo</a>
                 <a href="#beneficios">Beneficios</a>
                 <a href="#envios">Envíos</a>
                 <a href="#contacto">Contacto</a>
+
             </nav>
 
         </div>
+
     </header>
 
+
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
         <!-- PORTADA PRINCIPAL -->
         <section class="hero" id="inicio">
 
             <div class="hero-imagen">
-                <img src="img/banner.png" alt="Colección de lencería MARYS">
+
+                <img
+                    src="img/banner.png"
+                    alt="Colección de lencería MARYS">
+
             </div>
 
             <div class="hero-contenido">
@@ -75,7 +107,9 @@
                         class="boton boton-secundario"
                         target="_blank"
                         rel="noopener noreferrer">
+
                         CONTACTAR
+
                     </a>
 
                 </div>
@@ -83,6 +117,7 @@
             </div>
 
         </section>
+
 
         <!-- NOSOTROS -->
         <section class="seccion seccion-nosotros" id="nosotros">
@@ -93,9 +128,17 @@
                     CONOCE NUESTRA ESENCIA
                 </span>
 
-                <h2>
+                <h2 id="titulo-nosotros">
                     Más que lencería, una forma de sentirte tú
                 </h2>
+
+                <button
+                    type="button"
+                    id="boton-bienvenida">
+
+                    Conoce MARYS
+
+                </button>
 
                 <p>
                     En MARYS LENCERÍA CR creemos que cada mujer
@@ -110,6 +153,7 @@
             </div>
 
         </section>
+
 
         <!-- CATÁLOGO -->
         <section class="seccion seccion-catalogo" id="catalogo">
@@ -129,9 +173,13 @@
 
                 <div class="catalogo-grid">
 
+                    <!-- CATEGORÍA 1 -->
                     <article class="tarjeta-categoria">
+
                         <div class="imagen-categoria">
-                            <img src="img/producto1.png" alt="Conjuntos de lencería">
+                            <img
+                                src="img/Producto1.png"
+                                alt="Conjuntos de lencería">
                         </div>
 
                         <h3>Conjuntos de lencería</h3>
@@ -140,11 +188,17 @@
                             Diseños para sentirte especial
                             en cualquier ocasión.
                         </p>
+
                     </article>
 
+
+                    <!-- CATEGORÍA 2 -->
                     <article class="tarjeta-categoria">
+
                         <div class="imagen-categoria">
-                            <img src="img/producto2.png" alt="Conjuntos especiales">
+                            <img
+                                src="img/Producto2.png"
+                                alt="Conjuntos especiales">
                         </div>
 
                         <h3>Conjuntos especiales</h3>
@@ -153,11 +207,17 @@
                             Prendas que resaltan tu estilo
                             y personalidad.
                         </p>
+
                     </article>
 
+
+                    <!-- CATEGORÍA 3 -->
                     <article class="tarjeta-categoria">
+
                         <div class="imagen-categoria">
-                            <img src="img/producto3.png" alt="Prendas individuales">
+                            <img
+                                src="img/Producto3.png"
+                                alt="Prendas individuales">
                         </div>
 
                         <h3>Prendas individuales</h3>
@@ -166,6 +226,7 @@
                             Opciones para complementar
                             tu colección.
                         </p>
+
                     </article>
 
                 </div>
@@ -173,6 +234,7 @@
             </div>
 
         </section>
+
 
         <!-- BENEFICIOS -->
         <section class="seccion seccion-beneficios" id="beneficios">
@@ -192,27 +254,41 @@
                 <div class="beneficios-grid">
 
                     <article class="tarjeta-beneficio">
+
                         <span class="icono-beneficio">♡</span>
+
                         <h3>Atención personalizada</h3>
+
                         <p>
                             Te acompañamos para ayudarte a elegir.
                         </p>
+
                     </article>
 
+
                     <article class="tarjeta-beneficio">
+
                         <span class="icono-beneficio">✧</span>
+
                         <h3>Prendas seleccionadas</h3>
+
                         <p>
                             Opciones para diferentes gustos y estilos.
                         </p>
+
                     </article>
 
+
                     <article class="tarjeta-beneficio">
+
                         <span class="icono-beneficio">✓</span>
+
                         <h3>Compra segura</h3>
+
                         <p>
                             Atención directa y coordinación de pedidos.
                         </p>
+
                     </article>
 
                 </div>
@@ -220,6 +296,7 @@
             </div>
 
         </section>
+
 
         <!-- ENVÍOS -->
         <section class="seccion seccion-envios" id="envios">
@@ -240,26 +317,37 @@
                 <div class="envios-grid">
 
                     <article class="tarjeta-envio">
+
                         <h3>Entrega local</h3>
+
                         <p>
                             Coordinamos entregas en Liberia.
                         </p>
+
                     </article>
 
+
                     <article class="tarjeta-envio">
+
                         <h3>Envíos nacionales</h3>
+
                         <p>
                             Enviamos a diferentes zonas del país
                             mediante Correos de Costa Rica.
                         </p>
+
                     </article>
 
+
                     <article class="tarjeta-envio">
+
                         <h3>Pedido coordinado</h3>
+
                         <p>
                             Consulta disponibilidad, costo y
                             detalles de entrega por WhatsApp.
                         </p>
+
                     </article>
 
                 </div>
@@ -268,37 +356,86 @@
 
         </section>
 
+
         <!-- CONTACTO -->
-        <section class="seccion seccion-contacto" id="contacto">
+<section class="seccion seccion-contacto" id="contacto">
 
-            <div class="contenedor">
+    <div class="contenedor">
 
-                <span class="etiqueta-seccion">
-                    ESTAMOS PARA TI
-                </span>
+        <span class="etiqueta-seccion">
+            ESTAMOS PARA TI
+        </span>
 
-                <h2>¿Lista para elegir tus favoritos?</h2>
+        <h2>¿Lista para elegir tus favoritos?</h2>
 
-                <p>
-                    Escríbenos y con gusto te ayudaremos
-                    a encontrar tus prendas favoritas.
-                </p>
+        <p>
+            Escríbenos y con gusto te ayudaremos
+            a encontrar tus prendas favoritas.
+        </p>
 
-                <a
-                    href="https://wa.me/50663638746?text=Hola%2C%20MARYS%20LENCER%C3%8DA%20CR.%20Quiero%20informaci%C3%B3n%20sobre%20sus%20productos."
-                    class="boton boton-principal"
-                    target="_blank"
-                    rel="noopener noreferrer">
+        <!-- FORMULARIO DE CONTACTO -->
+        <form class="formulario-contacto" id="formulario-contacto">
 
-                    ESCRÍBENOS POR WHATSAPP
-
-                </a>
-
+            <div class="campo-formulario">
+                <label for="nombre">Nombre completo</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required>
             </div>
 
-        </section>
+            <div class="campo-formulario">
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required>
+            </div>
 
-    </main>
+            <div class="campo-formulario">
+                <label for="mensaje">¿En qué podemos ayudarte?</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu consulta..."
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="boton boton-principal">
+                ENVIAR CONSULTA
+            </button>
+            <p
+                id="mensaje-formulario"
+                class="mensaje-formulario"
+                role="status"
+                aria-live="polite">
+            </p>
+
+
+        </form>
+
+        <p>
+            También puedes contactarnos directamente:
+        </p>
+
+        <a
+            href="https://wa.me/50663638746?text=Hola%2C%20MARYS%20LENCER%C3%8DA%20CR.%20Quiero%20informaci%C3%B3n%20sobre%20sus%20productos."
+            class="boton boton-principal"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            ESCRÍBENOS POR WHATSAPP
+
+        </a>
+
+    </div>
+
+</section>
 
     <!-- PIE DE PÁGINA -->
     <footer class="pie-pagina">
@@ -307,17 +444,24 @@
 
             <h2>MARYS LENCERÍA CR</h2>
 
-            <p>Tu esencia, tu belleza, tu confianza.</p>
+            <p>
+                Tu esencia, tu belleza, tu confianza.
+            </p>
 
             <p>
-                © 2026 MARYS LENCERÍA CR. Todos los derechos reservados.
+                © 2026 MARYS LENCERÍA CR.
+                Todos los derechos reservados.
             </p>
 
         </div>
 
     </footer>
 
+
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
+```
