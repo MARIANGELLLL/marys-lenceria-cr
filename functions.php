@@ -8,15 +8,16 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-// Cargar estilos CSS
-// Cargar fuentes de Google Fonts
-wp_enqueue_style(
-    'marys-google-fonts',
-    'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap',
-    array(),
-    null
-);
+// Cargar estilos y fuentes
 function marys_lenceria_cr_child_styles() {
+
+    // Fuentes de Google
+    wp_enqueue_style(
+        'marys-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap',
+        array(),
+        null
+    );
 
     // Estilos del tema padre
     wp_enqueue_style(
@@ -28,7 +29,7 @@ function marys_lenceria_cr_child_styles() {
     wp_enqueue_style(
         'marys-child-style',
         get_stylesheet_uri(),
-        array('marys-parent-style'),
+        array('marys-parent-style', 'marys-google-fonts'),
         wp_get_theme()->get('Version')
     );
 
@@ -37,12 +38,11 @@ function marys_lenceria_cr_child_styles() {
         'marys-custom-style',
         get_stylesheet_directory_uri() . '/assets/css/style.css',
         array('marys-child-style'),
-        '1.0.0'
+        '1.0.1'
     );
 }
 
 add_action('wp_enqueue_scripts', 'marys_lenceria_cr_child_styles');
-
 
 // Cargar JavaScript principal
 function marys_lenceria_cr_child_scripts() {
