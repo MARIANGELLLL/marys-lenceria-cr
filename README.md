@@ -64,3 +64,11 @@ El proyecto utiliza Git y GitHub para mantener un historial de modificaciones, r
 
 Proyecto: MARYS LENCERÍA CR  
 Costa Rica — 2026
+
+---
+
+## 📚 Documentación del proyecto
+
+La planificación, el seguimiento, las evidencias y la documentación técnica de Marys Lencería CR se encuentran disponibles en Notion.
+
+🔗 [Ver documentación del proyecto](https://app.notion.com/p/MARYS-LENCER-A-CR-Documentaci-n-del-proyecto-42325862c6a880c39760fbb943e627fe?source=copy_link)
