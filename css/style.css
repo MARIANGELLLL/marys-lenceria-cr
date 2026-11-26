@@ -784,3 +784,33 @@ a:focus-visible {
 .mensaje-formulario.visible {
     display: block;
 }
+
+/* CATÁLOGO DE PRODUCTOS - MARYS */
+
+.producto {
+    height: 100%;
+}
+
+.producto .imagen-categoria {
+    aspect-ratio: 3 / 4;
+}
+
+.producto h3 {
+    min-height: 2.6em;
+}
+
+.producto .precio-producto {
+    margin: 0 15px 18px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.producto .boton-producto {
+    align-self: center;
+    width: calc(100% - 36px);
+    min-height: 44px;
+    margin: 0 18px 22px;
+    padding: 10px 15px;
+    font-size: 11px;
+}
