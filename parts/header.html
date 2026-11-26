@@ -2,34 +2,46 @@
 <header class="encabezado">
     <div class="encabezado-contenido">
 
-        <a href="#inicio" class="logo" aria-label="MARYS LENCERÍA CR - Inicio">
+        <!-- LOGOTIPO -->
+        <a href="/#inicio" class="logo" aria-label="MARYS LENCERÍA CR - Inicio">
             <img
                 src="/wp-content/themes/marys-lenceria-cr-child/assets/img/logo.png"
                 alt="MARYS LENCERÍA CR"
+                width="170"
+                height="75"
             >
         </a>
 
+        <!-- BOTÓN MENÚ MÓVIL -->
         <button
             class="boton-menu"
             id="boton-menu"
+            type="button"
             aria-label="Abrir menú"
             aria-expanded="false"
             aria-controls="navegacion-principal"
-            type="button"
         >
             ☰
         </button>
-<a href="/carrito/" class="icono-carrito" aria-label="Ver carrito de compras">
-    <span class="carrito-icono">🛒</span>
-    <span class="carrito-texto">Carrito</span>
-</a>
-        <nav class="navegacion" id="navegacion-principal">
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#beneficios">Beneficios</a>
-            <a href="#envios">Envíos</a>
-            <a href="#contacto">Contacto</a>
+
+        <!-- CARRITO -->
+        <a href="/carrito/" class="icono-carrito" aria-label="Ver carrito de compras">
+            <span class="carrito-icono" aria-hidden="true">🛍️</span>
+            <span class="carrito-texto">Carrito</span>
+        </a>
+
+        <!-- NAVEGACIÓN -->
+        <nav
+            class="navegacion"
+            id="navegacion-principal"
+            aria-label="Menú principal"
+        >
+            <a href="/#inicio">Inicio</a>
+            <a href="/#nosotros">Nosotros</a>
+            <a href="/#catalogo">Catálogo</a>
+            <a href="/#beneficios">Beneficios</a>
+            <a href="/#envios">Envíos</a>
+            <a href="/#contacto">Contacto</a>
         </nav>
 
     </div>
