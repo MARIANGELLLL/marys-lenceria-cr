@@ -1,6 +1,7 @@
 /* =====================================================
    MARYS LENCERÍA CR
    DISEÑO ELEGANTE · LUXURY FEMININE
+   ACCESIBILIDAD Y CONTRASTE MEJORADOS
    ===================================================== */
 
 /* 1. VARIABLES */
@@ -9,10 +10,12 @@
     --negro-suave: #251E1E;
     --dorado: #C6A46A;
     --dorado-claro: #E8D7B9;
+    --dorado-texto: #765522;
     --beige: #F5EAE3;
     --fondo: #FCF9F5;
     --blanco: #FFFFFF;
-    --texto: #625654;
+    --texto: #514440;
+    --placeholder: #625954;
     --borde: #E9DED5;
 
     --fuente-titulos: "Cormorant Garamond", Georgia, serif;
@@ -118,15 +121,15 @@ button {
     align-items: center;
     min-height: 44px;
     color: var(--negro);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     transition: var(--transicion);
 }
 
 .navegacion a:hover {
-    color: var(--dorado);
+    color: var(--dorado-texto);
 }
 
 /* 4. MENÚ MÓVIL */
@@ -222,11 +225,18 @@ button {
 .etiqueta-seccion {
     display: inline-block;
     margin-bottom: 20px;
-    color: var(--dorado);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.hero-etiqueta {
+    color: var(--dorado-claro);
+}
+
+.etiqueta-seccion {
+    color: var(--dorado-texto);
 }
 
 .hero h1 {
@@ -259,9 +269,9 @@ button {
     align-items: center;
     justify-content: center;
     border: 1px solid transparent;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 1.4px;
+    letter-spacing: 1px;
     text-align: center;
     transition: var(--transicion);
     cursor: pointer;
@@ -330,10 +340,10 @@ button {
     min-height: 46px;
     margin: 15px 0;
     padding: 12px 28px;
-    border: 1px solid var(--dorado);
+    border: 1px solid var(--dorado-texto);
     background: transparent;
     color: var(--negro);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -400,7 +410,7 @@ button {
 .tarjeta-categoria p {
     margin-top: auto;
     padding: 0 20px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 /* 11. PRODUCTOS Y COMPRAS */
@@ -442,8 +452,8 @@ button {
 .producto-etiqueta {
     display: inline-block;
     margin-bottom: 12px;
-    color: var(--dorado);
-    font-size: 9px;
+    color: var(--dorado-texto);
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -466,7 +476,7 @@ button {
 .descripcion-producto {
     min-height: 45px;
     margin-bottom: 12px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .precio-producto {
@@ -485,12 +495,12 @@ button {
     border-radius: 0;
     background: var(--fondo);
     color: var(--negro);
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .selector-talla:focus,
 .cantidad-producto:focus {
-    outline: 2px solid var(--dorado);
+    outline: 2px solid var(--dorado-texto);
     outline-offset: 2px;
 }
 
@@ -498,9 +508,9 @@ button {
     display: block;
     margin: 12px 0 6px;
     color: var(--negro);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: .8px;
+    letter-spacing: .5px;
     text-transform: uppercase;
 }
 
@@ -515,7 +525,7 @@ button {
     margin-top: 12px;
     padding: 12px 15px;
     border: 1px solid var(--negro);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -534,7 +544,7 @@ button {
 }
 
 .boton-comprar {
-    border-color: var(--dorado);
+    border-color: var(--dorado-texto);
     background: var(--dorado);
     color: var(--negro);
 }
@@ -549,7 +559,8 @@ button {
     padding: 16px 20px;
     border: 1px solid var(--borde);
     background: rgba(255, 255, 255, .7);
-    font-size: 11px;
+    color: var(--texto);
+    font-size: 12px;
     text-align: center;
 }
 
@@ -562,10 +573,10 @@ button {
     gap: 8px;
     min-height: 42px;
     padding: 10px 15px;
-    border: 1px solid var(--dorado);
+    border: 1px solid var(--dorado-texto);
     background: transparent;
     color: var(--negro);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     transition: var(--transicion);
 }
@@ -584,7 +595,7 @@ button {
     border-radius: 50%;
     background: var(--dorado);
     color: var(--negro);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -661,7 +672,7 @@ button {
 
 .detalles-carrito p {
     margin: 3px 0;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .controles-cantidad {
@@ -702,7 +713,7 @@ button {
     border: 0;
     background: transparent;
     color: #9B3434;
-    font-size: 11px;
+    font-size: 12px;
     text-decoration: underline;
 }
 
@@ -732,7 +743,7 @@ button {
     gap: 12px;
     margin-bottom: 12px;
     color: var(--negro);
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .resumen-carrito h3 {
@@ -795,7 +806,7 @@ button {
 .formulario-pedido-encabezado p {
     max-width: 570px;
     margin: auto;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #formulario-datos-pedido fieldset {
@@ -832,7 +843,7 @@ button {
 
 .campo-formulario label {
     color: var(--negro);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -846,7 +857,7 @@ button {
     border-radius: 0;
     background: var(--blanco);
     color: var(--negro);
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .campo-formulario textarea {
@@ -857,19 +868,20 @@ button {
 .campo-formulario input:focus,
 .campo-formulario select:focus,
 .campo-formulario textarea:focus {
-    outline: 2px solid var(--dorado);
+    outline: 2px solid var(--dorado-texto);
     outline-offset: 2px;
 }
 
 .campo-formulario input::placeholder,
 .campo-formulario textarea::placeholder {
-    color: #A69A93;
+    color: var(--placeholder);
+    opacity: 1;
 }
 
 .nota-formulario {
     margin: 12px 0 20px;
     color: var(--texto);
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.7;
 }
 
@@ -877,7 +889,8 @@ button {
     margin: 25px 0;
     padding: 18px;
     background: var(--beige);
-    font-size: 12px;
+    color: var(--negro);
+    font-size: 13px;
 }
 
 .aceptacion-formulario label {
@@ -892,11 +905,11 @@ button {
     height: 17px;
     flex-shrink: 0;
     margin-top: 3px;
-    accent-color: var(--dorado);
+    accent-color: var(--dorado-texto);
 }
 
 .aceptacion-formulario a {
-    color: #8B642F;
+    color: var(--dorado-texto);
     font-weight: 700;
     text-decoration: underline;
 }
@@ -904,10 +917,11 @@ button {
 .boton-enviar-pedido {
     width: 100%;
     min-height: 55px;
-    border: 1px solid var(--dorado);
+    border: 1px solid var(--dorado-texto);
     background: var(--dorado);
     color: var(--negro);
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .boton-enviar-pedido:hover {
@@ -942,7 +956,7 @@ button {
 .icono-beneficio {
     display: block;
     margin-bottom: 17px;
-    color: var(--dorado);
+    color: var(--dorado-texto);
     font-size: 30px;
 }
 
@@ -954,7 +968,7 @@ button {
 }
 
 .tarjeta-beneficio p {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 /* 16. ENVÍOS */
@@ -1012,7 +1026,7 @@ button {
 }
 
 .tarjeta-politica p {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 /* 18. CONTACTO */
@@ -1066,18 +1080,18 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 42px;
+    min-height: 44px;
     padding: 10px 18px;
-    border: 1px solid var(--dorado);
-    color: var(--dorado-claro);
-    font-size: 11px;
+    border: 1px solid var(--dorado-texto);
+    color: var(--dorado-texto);
+    font-size: 12px;
     font-weight: 600;
     transition: var(--transicion);
 }
 
 .redes-sociales a:hover {
-    background: var(--dorado);
-    color: var(--negro);
+    background: var(--dorado-texto);
+    color: var(--blanco);
 }
 
 /* 20. PIE DE PÁGINA */
@@ -1099,7 +1113,7 @@ button {
 .pie-pagina p {
     margin-top: 9px;
     color: var(--dorado-claro);
-    font-size: 12px;
+    font-size: 13px;
 }
 
 /* 21. ACCESIBILIDAD */
@@ -1108,7 +1122,7 @@ button:focus-visible,
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-    outline: 3px solid var(--dorado);
+    outline: 3px solid var(--dorado-texto);
     outline-offset: 4px;
 }
 
@@ -1171,6 +1185,10 @@ button:disabled {
         width: 90%;
         padding: 40px 0 50px;
         color: var(--negro);
+    }
+
+    .hero-etiqueta {
+        color: var(--dorado-texto);
     }
 
     .hero h1 {
@@ -1269,7 +1287,11 @@ button:disabled {
 
     .aceptacion-formulario {
         padding: 14px;
-        font-size: 11px;
+        font-size: 12px;
+    }
+
+    .formulario-contacto {
+        padding: 22px 16px;
     }
 }
 
