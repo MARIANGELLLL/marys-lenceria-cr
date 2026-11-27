@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="MARYS LENCERÍA CR. Descubre nuestra colección de lencería, promociones y envíos en Costa Rica.">
+    <meta name="description" content="MARYS LENCERÍA CR: descubre nuestra colección de lencería femenina. Compra tus conjuntos favoritos y recibe envíos en Costa Rica.">
 
-    <meta name="theme-color" content="#F9EEEE">
+    <meta name="author" content="MARYS LENCERÍA CR">
+    <meta name="theme-color" content="#171313">
 
     <title>MARYS LENCERÍA CR | Tu esencia, tu belleza</title>
 
@@ -15,11 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -43,37 +43,38 @@
                 ☰
             </button>
 
-            <nav
-                class="navegacion"
-                id="navegacion-principal"
-                aria-label="Navegación principal">
+            <nav class="navegacion" id="navegacion-principal">
 
                 <a href="#inicio">Inicio</a>
                 <a href="#nosotros">Nosotros</a>
-                <a href="#catalogo">Catálogo</a>
+                <a href="#catalogo">Tienda</a>
                 <a href="#beneficios">Beneficios</a>
                 <a href="#envios">Envíos</a>
                 <a href="#contacto">Contacto</a>
 
             </nav>
 
+            <!-- BOTÓN DEL CARRITO -->
+            <button class="boton-carrito" id="abrir-carrito" type="button">
+                🛍️ Carrito
+                <span id="contador-carrito">0</span>
+            </button>
+
         </div>
 
     </header>
 
 
-    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
         <!-- PORTADA -->
         <section class="hero" id="inicio">
 
             <div class="hero-imagen">
-
                 <img
                     src="img/banner.png"
-                    alt="Colección de lencería MARYS">
-
+                    alt="Colección de MARYS LENCERÍA CR"
+                    fetchpriority="high">
             </div>
 
             <div class="hero-contenido">
@@ -100,13 +101,11 @@
                     </a>
 
                     <a
-                        href="https://wa.me/50663638746?text=Hola%2C%20MARYS%20LENCER%C3%8DA%20CR.%20Me%20gustar%C3%ADa%20consultar%20sobre%20sus%20productos."
+                        href="https://wa.me/50663638746"
                         class="boton boton-secundario"
                         target="_blank"
                         rel="noopener noreferrer">
-
                         CONTACTAR
-
                     </a>
 
                 </div>
@@ -129,9 +128,7 @@
                     Más que lencería, una forma de sentirte tú
                 </h2>
 
-                <button
-                    type="button"
-                    id="boton-bienvenida">
+                <button type="button" id="boton-bienvenida">
                     Conoce MARYS
                 </button>
 
@@ -141,8 +138,8 @@
                 </p>
 
                 <p>
-                    Seleccionamos prendas pensadas para acompañarte
-                    en diferentes momentos y celebrar tu esencia.
+                    Desde 2017 seleccionamos prendas pensadas para
+                    celebrar tu esencia, feminidad y confianza.
                 </p>
 
             </div>
@@ -150,229 +147,586 @@
         </section>
 
 
-        <!-- CATÁLOGO -->
+        <!-- TIENDA -->
         <section class="seccion seccion-catalogo" id="catalogo">
 
             <div class="contenedor">
 
                 <span class="etiqueta-seccion">
-                    DESCUBRE NUESTRA COLECCIÓN
+                    DESCUBRE TU FAVORITO
                 </span>
 
-                <h2>Nuestro catálogo</h2>
+                <h2>Nuestra colección</h2>
 
                 <p class="texto-intro">
-                    Encuentra prendas que combinan estilo,
-                    comodidad y feminidad.
+                    Encuentra ese conjunto especial que te haga sentir única.
                 </p>
 
-                <div class="catalogo-grid" id="catalogo-productos">
+                <div class="catalogo-grid">
 
-                    <!-- PRODUCTO 1 -->
-                    <article class="tarjeta-categoria producto">
+                    <!-- SET CAROL -->
+                    <article class="tarjeta-categoria tarjeta-producto">
+
                         <div class="imagen-categoria">
-                            <img src="img/Producto1.png" alt="Producto 1 de MARYS LENCERÍA CR" loading="lazy">
+                            <img
+                                src="img/Producto1.png"
+                                alt="Set Carol de MARYS LENCERÍA CR"
+                                loading="lazy">
                         </div>
-                        <h3>Producto 1</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%201%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
+
+                        <div class="informacion-producto">
+
+                            <span class="producto-etiqueta">
+                                COLECCIÓN MARYS
+                            </span>
+
+                            <h3>Set Carol</h3>
+
+                            <p class="descripcion-producto">
+                                Un conjunto especial para resaltar tu feminidad.
+                            </p>
+
+                            <p class="precio-producto">
+                                ₡14.900
+                            </p>
+
+                            <label for="talla-carol">Selecciona tu talla:</label>
+
+                            <select id="talla-carol" class="selector-talla">
+                                <option value="">Elegir talla</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+
+                            <label for="cantidad-carol">Cantidad:</label>
+
+                            <input
+                                type="number"
+                                id="cantidad-carol"
+                                class="cantidad-producto"
+                                min="1"
+                                value="1">
+
+                            <button
+                                class="boton boton-principal boton-agregar"
+                                type="button"
+                                data-id="carol"
+                                data-nombre="Set Carol"
+                                data-precio="14900"
+                                data-imagen="img/Producto1.png"
+                                data-talla="talla-carol"
+                                data-cantidad="cantidad-carol">
+                                AGREGAR AL CARRITO
+                            </button>
+
+                            <button
+                                class="boton boton-secundario boton-comprar"
+                                type="button"
+                                data-id="carol">
+                                COMPRAR AHORA
+                            </button>
+
+                        </div>
+
                     </article>
 
-                    <!-- PRODUCTO 2 -->
-                    <article class="tarjeta-categoria producto">
+
+                    <!-- SET ABRIL -->
+                    <article class="tarjeta-categoria tarjeta-producto">
+
                         <div class="imagen-categoria">
-                            <img src="img/Producto2.png" alt="Producto 2 de MARYS LENCERÍA CR" loading="lazy">
+                            <img
+                                src="img/Producto2.png"
+                                alt="Set Abril de MARYS LENCERÍA CR"
+                                loading="lazy">
                         </div>
-                        <h3>Producto 2</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%202%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
+
+                        <div class="informacion-producto">
+
+                            <span class="producto-etiqueta">
+                                COLECCIÓN MARYS
+                            </span>
+
+                            <h3>Set Abril</h3>
+
+                            <p class="descripcion-producto">
+                                Un diseño delicado para sentirte hermosa y segura.
+                            </p>
+
+                            <p class="precio-producto">
+                                ₡13.500
+                            </p>
+
+                            <label for="talla-abril">Selecciona tu talla:</label>
+
+                            <select id="talla-abril" class="selector-talla">
+                                <option value="">Elegir talla</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+
+                            <label for="cantidad-abril">Cantidad:</label>
+
+                            <input
+                                type="number"
+                                id="cantidad-abril"
+                                class="cantidad-producto"
+                                min="1"
+                                value="1">
+
+                            <button
+                                class="boton boton-principal boton-agregar"
+                                type="button"
+                                data-id="abril"
+                                data-nombre="Set Abril"
+                                data-precio="13500"
+                                data-imagen="img/Producto2.png"
+                                data-talla="talla-abril"
+                                data-cantidad="cantidad-abril">
+                                AGREGAR AL CARRITO
+                            </button>
+
+                            <button
+                                class="boton boton-secundario boton-comprar"
+                                type="button"
+                                data-id="abril">
+                                COMPRAR AHORA
+                            </button>
+
+                        </div>
+
                     </article>
 
-                    <!-- PRODUCTO 3 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto3.png" alt="Producto 3 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 3</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%203%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
 
-                    <!-- PRODUCTO 4 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto4.png" alt="Producto 4 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 4</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%204%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                    <!-- SET VALENTINA -->
+                    <article class="tarjeta-categoria tarjeta-producto">
 
-                    <!-- PRODUCTO 5 -->
-                    <article class="tarjeta-categoria producto">
                         <div class="imagen-categoria">
-                            <img src="img/Producto5.png" alt="Producto 5 de MARYS LENCERÍA CR" loading="lazy">
+                            <img
+                                src="img/Producto3.png"
+                                alt="Set Valentina de MARYS LENCERÍA CR"
+                                loading="lazy">
                         </div>
-                        <h3>Producto 5</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%205%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
 
-                    <!-- PRODUCTO 6 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto6.png" alt="Producto 6 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 6</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%206%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                        <div class="informacion-producto">
 
-                    <!-- PRODUCTO 7 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto7.png" alt="Producto 7 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 7</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%207%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <span class="producto-etiqueta">
+                                COLECCIÓN MARYS
+                            </span>
 
-                    <!-- PRODUCTO 8 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto8.png" alt="Producto 8 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 8</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%208%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <h3>Set Valentina</h3>
 
-                    <!-- PRODUCTO 9 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto9.png" alt="Producto 9 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 9</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%209%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <p class="descripcion-producto">
+                                Un conjunto pensado para destacar tu personalidad.
+                            </p>
 
-                    <!-- PRODUCTO 10 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto10.png" alt="Producto 10 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 10</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2010%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <p class="precio-producto">
+                                ₡17.500
+                            </p>
 
-                    <!-- PRODUCTO 11 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto11.png" alt="Producto 11 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 11</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2011%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <label for="talla-valentina">Selecciona tu talla:</label>
 
-                    <!-- PRODUCTO 12 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto12.png" alt="Producto 12 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 12</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2012%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <select id="talla-valentina" class="selector-talla">
+                                <option value="">Elegir talla</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
 
-                    <!-- PRODUCTO 13 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto13.png" alt="Producto 13 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 13</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2013%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <label for="cantidad-valentina">Cantidad:</label>
 
-                    <!-- PRODUCTO 14 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto14.png" alt="Producto 14 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 14</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2014%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <input
+                                type="number"
+                                id="cantidad-valentina"
+                                class="cantidad-producto"
+                                min="1"
+                                value="1">
 
-                    <!-- PRODUCTO 15 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto15.png" alt="Producto 15 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 15</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2015%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <button
+                                class="boton boton-principal boton-agregar"
+                                type="button"
+                                data-id="valentina"
+                                data-nombre="Set Valentina"
+                                data-precio="17500"
+                                data-imagen="img/Producto3.png"
+                                data-talla="talla-valentina"
+                                data-cantidad="cantidad-valentina">
+                                AGREGAR AL CARRITO
+                            </button>
 
-                    <!-- PRODUCTO 16 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto16.png" alt="Producto 16 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 16</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50638738746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2016%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
+                            <button
+                                class="boton boton-secundario boton-comprar"
+                                type="button"
+                                data-id="valentina">
+                                COMPRAR AHORA
+                            </button>
 
-                    <!-- PRODUCTO 17 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto17.png" alt="Producto 17 de MARYS LENCERÍA CR" loading="lazy">
                         </div>
-                        <h3>Producto 17</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2017%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
 
-                    <!-- PRODUCTO 18 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto18.png" alt="Producto 18 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 18</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2018%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
-
-                    <!-- PRODUCTO 19 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto19.png" alt="Producto 19 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 19</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2019%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
-                    </article>
-
-                    <!-- PRODUCTO 20 -->
-                    <article class="tarjeta-categoria producto">
-                        <div class="imagen-categoria">
-                            <img src="img/Producto20.png" alt="Producto 20 de MARYS LENCERÍA CR" loading="lazy">
-                        </div>
-                        <h3>Producto 20</h3>
-                        <p class="precio-producto">Precio por confirmar</p>
-                        <a class="boton boton-principal boton-producto" href="https://wa.me/50663638746?text=Hola%2C%20quiero%20consultar%20por%20el%20Producto%2020%20de%20MARYS." target="_blank" rel="noopener noreferrer">CONSULTAR</a>
                     </article>
 
                 </div>
 
+                <p class="aviso-precios">
+                    Los precios mostrados no incluyen costo de envio.
+                </p>
+
             </div>
 
         </section>
+
+<!-- CARRITO DE COMPRAS -->
+<section class="seccion seccion-carrito" id="carrito">
+
+    <div class="contenedor">
+
+        <div class="encabezado-carrito">
+            <h2>Tu carrito de compras</h2>
+
+            <button type="button" id="cerrar-carrito">
+                ✕ Cerrar
+            </button>
+        </div>
+
+        <div id="productos-carrito">
+            <p class="carrito-vacio">
+                Tu carrito está esperando tus favoritos. ♡
+            </p>
+        </div>
+
+        <div class="resumen-carrito">
+
+            <p>
+                Subtotal:
+                <strong id="subtotal-carrito">₡0</strong>
+            </p>
+
+            <p>
+                Envío:
+                <span>Por coordinar</span>
+            </p>
+
+            <h3>
+                Total:
+                <strong id="total-carrito">₡0</strong>
+            </h3>
+
+            <button
+                type="button"
+                class="boton boton-principal"
+                id="finalizar-compra">
+                CONTINUAR CON MI PEDIDO
+            </button>
+
+            <button
+                type="button"
+                class="boton boton-secundario"
+                id="vaciar-carrito">
+                VACIAR CARRITO
+            </button>
+
+        </div>
+
+        <!-- FORMULARIO DE PEDIDO -->
+        <div class="formulario-pedido-contenedor" id="formulario-pedido" hidden>
+
+            <div class="formulario-pedido-encabezado">
+
+                <span class="etiqueta-seccion">
+                    UN PEDIDO ESPECIAL PARA TI
+                </span>
+
+                <h2>Completa tus datos</h2>
+
+                <p>
+                    Necesitamos esta información para coordinar
+                    tu pedido y la entrega de tus prendas.
+                </p>
+
+            </div>
+
+            <form id="formulario-datos-pedido">
+
+                <!-- DATOS PERSONALES -->
+                <fieldset>
+
+                    <legend>♡ Información personal</legend>
+
+                    <div class="formulario-grid">
+
+                        <div class="campo-formulario">
+                            <label for="nombre-cliente">
+                                Nombre completo *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre-cliente"
+                                name="nombre"
+                                placeholder="Escribe tu nombre completo"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="telefono-cliente">
+                                Número de teléfono *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefono-cliente"
+                                name="telefono"
+                                placeholder="Ejemplo: 8888-8888"
+                                autocomplete="tel"
+                                required>
+                        </div>
+
+                        <div class="campo-formulario campo-completo">
+                            <label for="correo-cliente">
+                                Correo electrónico (opcional)
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo-cliente"
+                                name="correo"
+                                placeholder="tucorreo@ejemplo.com"
+                                autocomplete="email">
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ENTREGA -->
+                <fieldset>
+
+                    <legend>✧ Información de entrega</legend>
+
+                    <div class="campo-formulario">
+
+                        <label for="tipo-entrega">
+                            ¿Cómo deseas recibir tu pedido? *
+                        </label>
+
+                        <select id="tipo-entrega" name="tipo-entrega" required>
+
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+
+                            <option value="Entrega local en Liberia">
+                                Entrega local en Liberia
+                            </option>
+
+                            <option value="Correos de Costa Rica - Domicilio">
+                                Correos de Costa Rica - Domicilio
+                            </option>
+
+                            <option value="Correos de Costa Rica - Sucursal">
+                                Correos de Costa Rica - Sucursal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div id="datos-direccion" hidden>
+
+                        <div class="formulario-grid">
+
+                            <div class="campo-formulario">
+                                <label for="provincia-cliente">
+                                    Provincia *
+                                </label>
+
+                                <select
+                                    id="provincia-cliente"
+                                    name="provincia">
+
+                                    <option value="">Seleccionar provincia</option>
+                                    <option value="San José">San José</option>
+                                    <option value="Alajuela">Alajuela</option>
+                                    <option value="Cartago">Cartago</option>
+                                    <option value="Heredia">Heredia</option>
+                                    <option value="Guanacaste">Guanacaste</option>
+                                    <option value="Puntarenas">Puntarenas</option>
+                                    <option value="Limón">Limón</option>
+
+                                </select>
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="canton-cliente">
+                                    Cantón *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="canton-cliente"
+                                    name="canton"
+                                    placeholder="Escribe tu cantón">
+                            </div>
+
+                            <div class="campo-formulario">
+                                <label for="distrito-cliente">
+                                    Distrito *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="distrito-cliente"
+                                    name="distrito"
+                                    placeholder="Escribe tu distrito">
+                            </div>
+
+                            <div class="campo-formulario campo-completo">
+                                <label for="direccion-cliente">
+                                    Dirección exacta o señas *
+                                </label>
+
+                                <textarea
+                                    id="direccion-cliente"
+                                    name="direccion"
+                                    rows="3"
+                                    placeholder="Indica dirección, puntos de referencia y otros detalles"></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div id="datos-sucursal" hidden>
+
+                        <div class="campo-formulario">
+
+                            <label for="sucursal-cliente">
+                                Sucursal de Correos de Costa Rica *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="sucursal-cliente"
+                                name="sucursal"
+                                placeholder="Indica la sucursal donde deseas retirar">
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- PAGO -->
+                <fieldset>
+
+                    <legend>♡ Método de pago</legend>
+
+                    <div class="campo-formulario">
+
+                        <label for="metodo-pago">
+                            Selecciona tu método de pago *
+                        </label>
+
+                        <select id="metodo-pago" name="metodo-pago" required>
+
+                            <option value="">
+                                Selecciona una opción
+                            </option>
+
+                            <option value="SINPE Móvil">
+                                SINPE Móvil
+                            </option>
+
+                            <option value="Transferencia bancaria">
+                                Transferencia bancaria
+                            </option>
+
+                            <option value="Tarjeta">
+                                Tarjeta
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <p class="nota-formulario">
+                        Te enviaremos las indicaciones para completar
+                        el pago. Tu pedido se procesará una vez verificado.
+                    </p>
+
+                </fieldset>
+
+                <!-- OBSERVACIONES -->
+                <fieldset>
+
+                    <legend>✧ Detalles adicionales</legend>
+
+                    <div class="campo-formulario">
+
+                        <label for="observaciones-pedido">
+                            Observaciones (opcional)
+                        </label>
+
+                        <textarea
+                            id="observaciones-pedido"
+                            name="observaciones"
+                            rows="4"
+                            placeholder="¿Deseas indicarnos algo sobre tu pedido?"></textarea>
+
+                    </div>
+
+                </fieldset>
+
+                <!-- ACEPTACIÓN -->
+                <div class="aceptacion-formulario">
+
+                    <label for="aceptar-politicas">
+
+                        <input
+                            type="checkbox"
+                            id="aceptar-politicas"
+                            name="aceptar-politicas"
+                            required>
+
+                        He leído y acepto las
+                        <a href="#politicas" target="_blank">
+                            políticas de MARYS LENCERÍA CR
+                        </a>.
+
+                    </label>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="boton boton-principal boton-enviar-pedido">
+
+                    ENVIAR PEDIDO POR WHATSAPP
+
+                </button>
+
+                <p class="nota-formulario">
+                    Al continuar, se abrirá WhatsApp con los detalles
+                    de tu pedido para que puedas confirmarlo con nosotros.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- BENEFICIOS -->
@@ -406,8 +760,8 @@
 
                     <article class="tarjeta-beneficio">
                         <span class="icono-beneficio">✓</span>
-                        <h3>Compra segura</h3>
-                        <p>Atención directa y coordinación de pedidos.</p>
+                        <h3>Compra coordinada</h3>
+                        <p>Confirmamos los detalles de tu pedido contigo.</p>
                     </article>
 
                 </div>
@@ -429,31 +783,24 @@
                 <h2>Envíos en Costa Rica</h2>
 
                 <p class="texto-intro">
-                    Queremos que recibas tus prendas de forma cómoda
-                    y coordinada.
+                    Queremos que recibas tus prendas de forma cómoda y coordinada.
                 </p>
 
                 <div class="envios-grid">
 
                     <article class="tarjeta-envio">
                         <h3>Entrega local</h3>
-                        <p>Coordinamos entregas en Liberia.</p>
+                        <p>Coordinamos entregas locales en Liberia.</p>
                     </article>
 
                     <article class="tarjeta-envio">
                         <h3>Envíos nacionales</h3>
-                        <p>
-                            Enviamos a diferentes zonas del país
-                            mediante Correos de Costa Rica.
-                        </p>
+                        <p>Enviamos a diferentes zonas del país mediante Correos de Costa Rica.</p>
                     </article>
 
                     <article class="tarjeta-envio">
                         <h3>Pedido coordinado</h3>
-                        <p>
-                            Consulta disponibilidad, costo y
-                            detalles de entrega por WhatsApp.
-                        </p>
+                        <p>Consulta disponibilidad, costo y detalles de entrega por WhatsApp.</p>
                     </article>
 
                 </div>
@@ -462,85 +809,182 @@
 
         </section>
 
+<!-- POLÍTICAS -->
+<section class="seccion seccion-politicas" id="politicas">
 
-        <!-- CONTACTO -->
-        <section class="seccion seccion-contacto" id="contacto">
+    <div class="contenedor">
 
-            <div class="contenedor">
+        <span class="etiqueta-seccion">
+            INFORMACIÓN IMPORTANTE
+        </span>
 
-                <span class="etiqueta-seccion">
-                    ESTAMOS PARA TI
-                </span>
+        <h2>Políticas de nuestra tienda</h2>
 
-                <h2>¿Lista para elegir tus favoritos?</h2>
+        <p class="texto-intro">
+            En MARYS LENCERÍA CR queremos ofrecerte una experiencia
+            de compra clara, segura y transparente. Antes de realizar
+            tu pedido, te invitamos a conocer nuestras condiciones.
+        </p>
 
+        <div class="politicas-grid">
+
+            <article class="tarjeta-politica">
+                <h3>♡ Métodos de pago</h3>
                 <p>
-                    Escríbenos y con gusto te ayudaremos
-                    a encontrar tus prendas favoritas.
+                    Aceptamos SINPE Móvil, transferencia bancaria
+                    y pagos con tarjeta, según los medios disponibles
+                    y previamente confirmados. Los pedidos se procesan
+                    una vez verificado el pago.
                 </p>
+            </article>
 
-                <form class="formulario-contacto" id="formulario-contacto">
+            <article class="tarjeta-politica">
+                <h3>✧ Envíos y entregas</h3>
+                <p>
+                    Realizamos entregas locales en Liberia y envíos
+                    nacionales mediante Correos de Costa Rica.
+                    El costo y plazo de entrega se coordinan y confirman
+                    antes de realizar el envío.
+                </p>
+            </article>
 
-                    <div class="campo-formulario">
-                        <label for="nombre">Nombre completo</label>
-                        <input
-                            type="text"
-                            id="nombre"
-                            name="nombre"
-                            placeholder="Escribe tu nombre"
-                            autocomplete="name"
-                            required>
-                    </div>
+            <article class="tarjeta-politica">
+                <h3>♡ Cambios y devoluciones</h3>
+                <p>
+                    Por tratarse de prendas íntimas, no aceptamos
+                    cambios ni devoluciones por gusto, talla o elección
+                    del cliente, salvo cuando la legislación costarricense
+                    establezca lo contrario.
+                </p>
+            </article>
 
-                    <div class="campo-formulario">
-                        <label for="correo">Correo electrónico</label>
-                        <input
-                            type="email"
-                            id="correo"
-                            name="correo"
-                            placeholder="ejemplo@correo.com"
-                            autocomplete="email"
-                            required>
-                    </div>
+            <article class="tarjeta-politica">
+                <h3>✧ Confirmación de pedidos</h3>
+                <p>
+                    Antes de pagar, verifica el producto, la talla,
+                    la cantidad y el precio. La disponibilidad se confirma
+                    al coordinar el pedido. No ofrecemos pago contra entrega.
+                </p>
+            </article>
 
-                    <div class="campo-formulario">
-                        <label for="mensaje">¿En qué podemos ayudarte?</label>
-                        <textarea
-                            id="mensaje"
-                            name="mensaje"
-                            rows="5"
-                            placeholder="Escribe tu consulta..."
-                            required></textarea>
-                    </div>
+            <article class="tarjeta-politica">
+                <h3>♡ Promociones</h3>
+                <p>
+                    Las promociones estarán sujetas a las condiciones
+                    y fechas indicadas al momento de su publicación.
+                    Una vez confirmado el pedido, no se aceptan cambios
+                    de productos por decisión del cliente, salvo los
+                    derechos que establezca la legislación aplicable.
+                </p>
+            </article>
 
-                    <button type="submit" class="boton boton-principal">
-                        ENVIAR CONSULTA
-                    </button>
+            <article class="tarjeta-politica">
+                <h3>✧ Privacidad</h3>
+                <p>
+                    La información personal compartida se utilizará
+                    únicamente para atender consultas, gestionar pedidos,
+                    coordinar pagos y organizar entregas, de acuerdo
+                    con la normativa aplicable de protección de datos.
+                </p>
+            </article>
 
-                    <p
-                        id="mensaje-formulario"
-                        class="mensaje-formulario"
-                        role="status"
-                        aria-live="polite">
-                    </p>
+        </div>
 
-                </form>
+    </div>
 
-                <p>También puedes contactarnos directamente:</p>
+</section>
 
-                <a
-                    href="https://wa.me/50663638746?text=Hola%2C%20MARYS%20LENCER%C3%8DA%20CR.%20Quiero%20informaci%C3%B3n%20sobre%20sus%20productos."
-                    class="boton boton-principal"
-                    target="_blank"
-                    rel="noopener noreferrer">
 
-                    ESCRÍBENOS POR WHATSAPP
+<!-- CONTACTO -->
+<section class="seccion seccion-contacto" id="contacto">
 
-                </a>
+    <div class="contenedor">
 
+        <span class="etiqueta-seccion">ESTAMOS PARA TI</span>
+
+        <h2>¿En qué podemos ayudarte?</h2>
+
+        <p>
+            En MARYS LENCERÍA CR queremos brindarte una atención especial.
+            Completa el formulario y con gusto te atenderemos.
+        </p>
+
+        <form id="formulario-contacto" class="formulario-contacto">
+
+            <div class="campo-formulario">
+                <label for="nombre">Nombre completo *</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre completo"
+                    autocomplete="name"
+                    required>
             </div>
 
-        </section>
+            <div class="campo-formulario">
+                <label for="correo">Correo electrónico *</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    autocomplete="email"
+                    required>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="telefono">Número de teléfono</label>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ej. 8888-8888"
+                    autocomplete="tel">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="asunto">Motivo de contacto *</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Información sobre productos">Información sobre productos</option>
+                    <option value="Disponibilidad y tallas">Disponibilidad y tallas</option>
+                    <option value="Estado de mi pedido">Estado de mi pedido</option>
+                    <option value="Envíos y entregas">Envíos y entregas</option>
+                    <option value="Métodos de pago">Métodos de pago</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="mensaje">Tu mensaje *</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="6"
+                    placeholder="Cuéntanos cómo podemos ayudarte..."
+                    minlength="10"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="boton boton-principal">
+                ENVIAR MENSAJE POR WHATSAPP
+            </button>
+
+            <p
+                id="mensaje-formulario"
+                class="mensaje-formulario"
+                role="status"
+                aria-live="polite">
+            </p>
+
+            <small>* Campos obligatorios.</small>
+
+        </form>
+
+    </div>
+
+</section>
 
     </main>
 
@@ -552,7 +996,31 @@
 
             <h2>MARYS LENCERÍA CR</h2>
 
-            <p>Tu esencia, tu belleza, tu confianza.</p>
+            <p>
+                Tu esencia, tu belleza, tu confianza.
+            </p>
+
+            <div class="redes-sociales">
+
+                <a
+                    href="https://www.instagram.com/marys.lenceria.cr/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Instagram
+                </a>
+
+                <a
+                    href="https://wa.me/50663638746"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    WhatsApp
+                </a>
+
+                <a href="#politicas">
+                    Políticas de la tienda
+                </a>
+
+            </div>
 
             <p>
                 © 2026 MARYS LENCERÍA CR.
@@ -568,5 +1036,4 @@
     <script src="js/script.js"></script>
 
 </body>
-
 </html>
